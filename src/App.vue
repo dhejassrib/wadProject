@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
@@ -81,5 +81,34 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+</style> -->
+
+<!-- <script setup>
+</script>
+
+<template>
+  <RouterView />
+</template>
+
+<style scoped>
+</style> -->
+
+<template>
+  <div class="app-wrapper">
+    <RouterView />
+  </div>
+</template>
+
+<script setup>
+</script>
+
+<style>
+.app-wrapper {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;           /* full viewport height */
+  width: 100vw;
 }
 </style>

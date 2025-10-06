@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login/Signup</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="forms-wrapper">
+
+      <!-- Login Form -->
+      <div class="form-container login-form">
+        <h2>Login</h2>
+        <form>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <p><a href="#">Forgot password?</a></p>
+          <p><span id="createAccount" class="toggle-link">Create an account</span></p>
+        </form>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="form-container signup-form">
+        <h2>Sign Up</h2>
+        <form>
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Sign Up</button>
+          <p><span id="loginLink" class="toggle-link">Already have an account? Login</span></p>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="image-box">
+      <img src="planet_img.jpg" alt="Planet Image" />
+    </div>
+  </div>
+
+  <script>
+    const container = document.getElementById("container");
+    const createAccountBtn = document.getElementById("createAccount");
+    const loginLink = document.getElementById("loginLink");
+
+    createAccountBtn.addEventListener("click", () => {
+      container.classList.add("sign-up-mode");
+    });
+
+    loginLink.addEventListener("click", () => {
+      container.classList.remove("sign-up-mode");
+    });
+  </script>
+</body>
+</html>
