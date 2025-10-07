@@ -93,7 +93,6 @@ nav a:first-of-type {
 
 <style scoped>
 </style> -->
-
 <template>
   <div class="app-wrapper">
     <RouterView />
