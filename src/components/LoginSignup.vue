@@ -117,4 +117,3 @@ a { color: #fff; text-decoration: underline; }
 .container.sign-up-mode .login-form { transform: translateX(-100%); opacity: 0; }
 .container.sign-up-mode .image-box { order: -1; }
 </style>
-
